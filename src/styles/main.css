@@ -1,0 +1,94 @@
+:root,
+input {
+    font-family: 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 62.5%;
+    font-size: 100%;
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+button,
+input,
+.div-assets
+{
+    font-size: 1rem;
+    padding: .2rem .4rem;
+    outline: none;
+    border-radius: .2rem;
+    border: none;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: darkslateblue;
+    color: white;
+    cursor: pointer;
+}
+
+.div-assets {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+}
+
+.asset-container-div p {
+    pointer-events: none;
+}
+
+.asset-container-div {
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main {
+    margin-top: 2rem;
+    margin-inline: 1.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1 1 auto;
+}
+
+.div-asset-input {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: .2rem;
+    display: flex;
+    gap: 0.5rem;
+    background-color: #f7f7f7;
+    align-items: center;
+}
+
+.asset-tags-div.hidden {
+    display: none;
+}
+
+.assets-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.asset-container-div {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-remove-asset {
+    margin-left: auto;
+}
