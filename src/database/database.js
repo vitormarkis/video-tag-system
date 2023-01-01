@@ -26,11 +26,15 @@ const db_elements = {
 }
 
 export const tag_details = [
-    { level: 'basic',      color: '#006400' },
-    { level: 'crucial',    color: '#0000ff' },
-    { level: 'important',  color: '#ff8c00' },
-    { level: 'junior',     color: '#7fff00' },
-    { level: 'advanced',   color: '#8b008b' },
+    { level: 'basic',      color: 'hsl(120,87%,40%)' },
+    { level: 'crucial',    color: 'hsl(80,87%,40%)' },
+    { level: 'important',  color: 'hsl(50,87%,40%)' },
+    { level: 'junior',     color: 'hsl(20,87%,40%)' },
+    { level: 'advanced',   color: 'hsl(0,87%,40%)' },
 ]
+
+/* * {
+    color: hsl(90, 75%, 43%);
+} */
 
 export { db_elements }

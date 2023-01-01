@@ -1,18 +1,18 @@
 import { db_elements } from "../database/database.js"
-import { getDatabase } from "../database/LocalStorage.js"
 import { Elements } from "./Elements.js"
-import { sortTags } from "./Functionals.js"
+import { refreshDB } from "./Functionals.js"
 import { Render } from "./Render.js"
 
 export const App = {
-    init() {
-    let db = getDatabase('db_assets')
-    document.body.innerHTML = ''
-    sortTags(db)
-    return `
+    async init() {
+    let db = await refreshDB('db_assets')
+
+    document.body.innerHTML = `
     <main>
-        <div class="div-asset-input">
-            ${Elements.input(db_elements.asset_input)}
+        <div id="div-asset-input-container">
+            <div class="div-asset-input">
+                ${Elements.input(db_elements.asset_input)}
+            </div>
         </div>
         <div id="div-tag-input-container">
             <div class="div-asset-input">
@@ -29,4 +29,3 @@ export const App = {
    `
     }
 }
-
