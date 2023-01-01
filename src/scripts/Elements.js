@@ -1,4 +1,4 @@
-import { tagContent } from "./Functionals.js"
+import { tagContentKey } from "./Functionals.js"
 
 export const Elements = {
     input({ asset_name, asset_placeholder, btn_content }) {
@@ -11,7 +11,7 @@ export const Elements = {
         `
     },
     asset({ id, asset_name, tags}) {
-        let f_tags = tagContent(tags, 'span') 
+        let f_tags = tagContentKey(tags, 'span') 
 
         return `
         <div data-id="${id}" class="div-assets">
@@ -26,3 +26,4 @@ export const Elements = {
         `
     }
 }
+

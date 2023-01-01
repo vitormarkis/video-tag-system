@@ -38,4 +38,61 @@ export const actions = {
         document.body.innerHTML = App.init()
 
     }
-}
+} 
+
+setDatabase('db_assets', [
+    {
+        "id": 2,
+        "asset_name": "Aula 002 - Projeto Interface Uber",
+        "tags": [
+            {
+                name: "Arrow Functions",
+                level: "important",
+            },
+            {
+                name: "map() method",
+                level: "basic",
+            },
+            {
+                name: "filter() method",
+                level: "crucial",
+            },
+        ]
+    },
+    {
+        "id": 3,
+        "asset_name": "Aula 003 - Calculadora Mágica",
+        "tags": [
+            {
+                name: "Arrow Functions",
+                level: "basic",
+            },
+            {
+                name: "map() method",
+                level: "basic",
+            },
+            {
+                name: "filter() method",
+                level: "basic",
+            },
+        ]
+    },
+    {
+        "id": 4,
+        "asset_name": "Aula 004 - Como criar APIs",
+        "tags": [
+            {
+                name: "Arrow Functions",
+                level: "basic",
+            },
+            {
+                name: "map() method",
+                level: "basic",
+            },
+            {
+                name: "filter() method",
+                level: "basic",
+            },
+        ]
+    }
+])
