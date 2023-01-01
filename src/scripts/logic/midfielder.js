@@ -6,8 +6,6 @@ export function checkHiddens(divs) {
         return acc
     }, [])
 
-    console.log(actual_div)
-
     if(actual_div.length === 1) {
             return {
             enabled: true,

@@ -4,6 +4,7 @@ import { App } from '../App.js'
 export const getElementValues = () => ({
     input_asset: document.querySelector('#inp-asset-input'),
     input_tag: document.querySelector('#inp-tag-input'),
+    input_taglevel: document.querySelector('#inp-taglevel-input'),
 })
 
 export const toggleAssets = (div_assets) => {

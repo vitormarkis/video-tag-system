@@ -23,6 +23,10 @@ input,
     border: none;
 }
 
+body * {
+    animation: all 400ms;
+}
+
 input {
     width: 100%;
     border: 1px solid #ccc;
@@ -63,7 +67,9 @@ main {
     flex: 1 1 auto;
 }
 
-.div-asset-input {
+#div-tag-input-container {
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: .2rem;
@@ -71,6 +77,17 @@ main {
     gap: 0.5rem;
     background-color: #f7f7f7;
     align-items: center;
+}
+
+.div-asset-input {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    width: 100%;
+}
+
+.div-asset-input button {
+    margin-left: auto;
 }
 
 .asset-tags-div.hidden {

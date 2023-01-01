@@ -1,13 +1,12 @@
-import { tagContentKeyTitle } from "./Functionals.js"
+import { tagContentKeyTitle, transformStringToHTML } from "./Functionals.js"
 
 export const Elements = {
     input(params) {
         return `
-        <div class="div-asset-input">
             <label>${params.label_name}</label>
             <input id="${params.input_id}" type="text" placeholder="${params.input_placeholder}" ${params.enable}>
             <button id="${params.btn_id}">${params.btn_content}</button>
-        </div>
+            </div>
         `
     },
     asset({ id, asset_name, tags}) {
