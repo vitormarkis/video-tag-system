@@ -10,6 +10,7 @@ export const App = {
     return `
     <main>
     ${Elements.input(db_elements.asset_input)}
+    ${Elements.input(db_elements.tags_input)}
         <div class="assets-container">
             ${Render.join(db, 'asset')}
         </div>

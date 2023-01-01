@@ -5,9 +5,9 @@ export function tagContent(array, element_type) {
     }, ``)
 }
 
-export function tagContentKey(array, element_type) {
+export function tagContentKeyTitle(array, element_type) {
     return array.reduce((acc, item) => {
-        acc += `<${element_type} class="${item.level}">${item.name}</${element_type}>`
+        acc += `<${element_type} class="${item.level}" title="${item.level}">${item.name}</${element_type}>`
         return acc
     }, ``)
 }
