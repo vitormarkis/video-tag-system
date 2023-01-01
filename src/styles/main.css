@@ -92,3 +92,16 @@ main {
 .btn-remove-asset {
     margin-left: auto;
 }
+
+.assets-container .asset-tags-div span {
+    display: inline-block;
+    font-size: .7em;
+    background-color: orangered;
+    color: #fff;
+    border-radius: 5px;
+    padding: .1rem .3rem;
+}
+
+.assets-container .asset-tags-div span:not(:last-of-type) {
+    margin-right: .3rem;
+}
